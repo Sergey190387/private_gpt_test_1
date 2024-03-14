@@ -1,0 +1,12 @@
+conda create -n privategpt python=3.11 anaconda
+
+
+pip install --upgrade poetry
+
+poetry install --with ui,local
+
+ python scripts/setup
+pip install -U gradio==4.19 -U
+ pip install --force-reinstall --no-cache-dir llama-cpp-python==0.2.23   -C  cmake.args="-DLLAMA_CUBLAS=on"
+ pip install docx2txt
+ python -m private_gpt
