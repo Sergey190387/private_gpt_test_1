@@ -40,6 +40,7 @@ llm:
   max_new_tokens: 512
   context_window: 3900
   tokenizer: Open-Orca/Mistral-7B-OpenOrca  # mistralai/Mistral-7B-Instruct-v0.2
+  temperature: 0.001
 
 embedding:
   # Should be matching the value above in most cases

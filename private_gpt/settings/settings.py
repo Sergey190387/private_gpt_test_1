@@ -98,6 +98,11 @@ class LLMSettings(BaseModel):
         "like `HuggingFaceH4/zephyr-7b-beta`. If not set, will load a tokenizer matching "
         "gpt-3.5-turbo LLM.",
     )
+    temperature: float | None = Field(
+        0.1,
+        description="Temperature.",
+    )
+
 
 
 class VectorstoreSettings(BaseModel):
